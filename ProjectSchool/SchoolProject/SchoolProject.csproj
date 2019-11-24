@@ -1894,10 +1894,10 @@
     <Content Include="Views\TesteModels\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Anotacoes\Index.cshtml" />
-    <Content Include="Views\Anotacoes\Details.cshtml" />
-    <Content Include="Views\Anotacoes\Edit.cshtml" />
-    <Content Include="Views\Anotacoes\Delete.cshtml" />
     <Content Include="Views\Anotacoes\Create.cshtml" />
+    <Content Include="Views\Anotacoes\Edit.cshtml" />
+    <Content Include="Views\Anotacoes\Details.cshtml" />
+    <Content Include="Views\Anotacoes\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -78,7 +78,7 @@ namespace SchoolProject.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "cod_anotacao,texto")] AnotacoesModel anotacoesModel)
+        public ActionResult Edit(AnotacoesModel anotacoesModel)
         {
             if (ModelState.IsValid)
             {

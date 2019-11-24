@@ -11,6 +11,7 @@ namespace SchoolProject.Models
         [Key]
         public int cod_anotacao { get; set; }
 
+        [Display(Name ="Anotação")]
         public string texto { get; set; }
         
     }
