@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Bem Vindo!";
+}
+<style>
+
+    .btn-app {
+        background-color: #eae0e0;
+        padding: 20px;
+        display: block;
+        border-radius: 20px 20px 20px 20px;
+        margin: 20px;
+        width: 110%;
+    }
+
+    .btn-icon {
+        color: #7b6e6e;
+        font-size: 90px;
+    }
+
+    .btn-text {
+        color: #7b6e6e;
+    }
+</style>
+
+<script>
+
+    function AdjustIcon() {
+        var width = $(window).width(), height = $(window).height();
+        if ((width <= 680)) {
+            $(".btn-icon").css("font-size", "40px");
+            $(".btn-text").css("font-size", "10px");
+        }
+        else {
+            $(".btn-icon").css("font-size", "90px");
+            $(".btn-text").css("font-size", "15px");
+        }
+    }
+
+
+    $(window).resize(function () {
+        AdjustIcon();
+    });
+
+
+    $(function () {
+        AdjustIcon(); 
+    });
+
+</script>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+
+
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-comment btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Mensagens</span>
+
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-envelope btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">E-mail</span>
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-calendar btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Agenda</span>
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-edit btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Anotações</span>
+
+        </a>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-user btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Aluno</span>
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-images btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Galeria</span>
+        </a>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="fas fa-wrench btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Configurações</span>
+        </a>
+    </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <a class="btn btn-app">
+            <i class="far fa-newspaper btn-icon text-center"></i><br />
+            <span class="text text-center btn-text">Eventos</span>
+        </a>
+    </div>
+
+
+
+
+</div>
+
+
+
