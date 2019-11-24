@@ -9,17 +9,37 @@
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/fontawesome-free-5.11.2-web/css/all.css"  rel="stylesheet"/>
     <script src="~/Content/jquery-3.4.1.min.js"></script>
+
+    <style>
+        #backbutton {
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 25px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                @if (ViewBag.ishome == null || ViewBag.ishome == false)
+                {
+                    <a class="pull-right far fa-arrow-alt-circle-left" id="backbutton" href="javascript: history.go(-1);"></a>
+                }
+
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

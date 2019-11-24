@@ -12,8 +12,8 @@ namespace SchoolProject.Controllers
         public static DBContext db = new DBContext(); 
         public ActionResult Index()
         {
-       
 
+            ViewBag.ishome = true;
             return View();
         }
 

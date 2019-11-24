@@ -15,5 +15,7 @@ namespace SchoolProject.Models
 
         public System.Data.Entity.DbSet<SchoolProject.Models.TesteModel> TesteModels { get; set; }
         public System.Data.Entity.DbSet<SchoolProject.Models.UsuarioModel> UsuarioModel { get; set; }
+
+        public System.Data.Entity.DbSet<SchoolProject.Models.AnotacoesModel> AnotacoesModels { get; set; }
     }
 }
