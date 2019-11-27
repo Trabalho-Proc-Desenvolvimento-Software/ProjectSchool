@@ -175,7 +175,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Classes\UserHelp.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlunoController.cs" />
     <Compile Include="Controllers\AnotacoesController.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\GaleriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TesteModelsController.cs" />
@@ -1781,6 +1784,7 @@
     <Content Include="Content\fontawesome-free-5.11.2-web\webfonts\fa-regular-400.svg" />
     <Content Include="Content\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.svg" />
     <Content Include="Content\Images\20140407170452_1200_675_-_windows_xp.jpg" />
+    <Content Include="Content\Images\aluno.jpg" />
     <Content Include="Content\jquery-3.4.1.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1898,6 +1902,9 @@
     <Content Include="Views\Anotacoes\Edit.cshtml" />
     <Content Include="Views\Anotacoes\Details.cshtml" />
     <Content Include="Views\Anotacoes\Delete.cshtml" />
+    <Content Include="Views\Aluno\Index.cshtml" />
+    <Content Include="Views\Email\Index.cshtml" />
+    <Content Include="Views\Galeria\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
